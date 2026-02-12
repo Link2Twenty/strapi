@@ -13,7 +13,7 @@ type CustomFieldUID = Utils.String.Suffix<
   string
 >;
 
-type CustomFieldOptionInput =
+type CustomFieldOptionInput = 
   | 'text'
   | 'checkbox'
   | 'checkbox-with-number-field'
@@ -38,6 +38,7 @@ type CustomFieldOptionName =
   | 'unique'
   | 'private'
   | 'default';
+  | `options.${string}`
 
 interface CustomFieldOption {
   intlLabel: MessageDescriptor & {
